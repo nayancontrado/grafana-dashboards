@@ -13,10 +13,7 @@ import { Databases } from '../Details.types';
 const { TabPane } = Tabs;
 const { Panel } = Collapse;
 
-const TableCreateContainer: FC<TableContainerProps> = ({
-  databaseType,
-  examples,
-}) => {
+const TableCreateContainer: FC<TableContainerProps> = ({ databaseType, examples }) => {
   const [tables, loading] = useTables(examples, databaseType);
 
   return (
